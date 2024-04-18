@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+    rust-app:
+        build: .
+        stdin_open: true # Ouvre stdin
+        tty: true # Alloue un pseudo-TTY
+        command: cargo run --release
